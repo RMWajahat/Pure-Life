@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;800&display=swap');
+
+body {
+  width: 100%;
+  height: 75vh;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm8FoOWQuuPJWPGXu10f9hfNt5HY3MM3CWKg&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+}
+
+.message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.message {
+  width: 1300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.message h1 {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  background-color: rgb(56, 188, 56);
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  padding: 3vw 5vw;
+  border-radius: 15px;
+}
+
+@media (max-width:768px) {
+ .message-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+ } 
+}

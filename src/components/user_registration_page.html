@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+  <title>Register Form</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta placeholder="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/header_design.css">
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/contact_form.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body onload="javascript:yearSelect()">
+  <!--Header component-->
+  <header>
+    <div class="companylogo">
+      <h1>Pure<span>LIFE</span></h1>
+    </div>
+
+    <div class="menu-container" id="menu-container">
+      <div class="first">
+        <a href="index.html"><span class="home">HOME</span></a>
+
+        <a href="./index.html#view-services"><span class="contactservice">Services</span></a>
+        <div class="dropdown">
+          <a href="./index.html#view-services"><span class="services">Services</span></a>
+          <a href="service_yoga_page.html"><span class="services">Yoga</span></a>
+          <a href="meditation_service_page.html"><span class="services">Meditation</span></a>
+          <a href="stretching_Service.html"><span class="services">Stretching</span></a>
+          <a href="healthy_habits_page.html"><span class="services">Healthy Habits</span></a>
+          <a href="page_meal_Planner.html"><span class="services">Meal Planner</span></a>
+        </div>
+        <a href="contactus_page.html"><span class="contact">Contact</span></a>
+      </div>
+    </div>
+
+    <div class="contactlink">
+      <button  
+title="Register User" onclick="window.location.href='./user_registration_page.html';"><i class='bx bxs-user-plus'></i></button>
+    </div>
+
+    <div class="menu-btn">
+      <i class='bx bx-menu'></i>
+    </div>
+  </header>
+
+  <!-- Register Form -->
+  <section class="contactform">
+    <form id="form" action="/src/components/formSuccess.html">
+      <h1>Registration</h1>
+      <div class="inputarea">
+        <label for="Name">Name</label>
+        <input type="text" name="Name" placeholder="Enter Your Name" id="Name" maxlength="25" required>
+      </div>
+      <div class="inputarea">
+        <label for="email">Email</label> 
+        <input type="email" name="Email" placeholder="Enter Email" id="Email" required>
+      </div>
+      <div class="inputarea">
+        <label for="phoneNo">Phone Number</label>
+        <input type="tel" name="phoneNo" placeholder="Enter your Phone / Mobile " id="phoneNo" required>
+      </div>
+      <div class="otherinputs">
+        <label for="birthYear">Birth Year</label>
+        <select name="birthYear" id="birthYear" required>
+          <option value="#" selected>Select Birth Year</option>
+        </select>
+      </div>
+      <div class="otherinputs">
+        <label for="studyStatus">Student Status:</label><br>
+        <input type="radio" name="studStatus" id="studying" required><label for="studying" class="label-radio">Studying</label><br>
+        <input type="radio" name="studStatus" id="notStudying" required><label for="notStudying" class="label-radio">Not Studying</label>
+      </div>
+      <div class="otherinputs">
+        <label for="empStatus">Employment Status:</label><br>
+        <input type="radio" name="empStatus" id="emp" required><label for="emp" class="label-radio">Employed</label><br>
+        <input type="radio" name="empStatus" id="seekEmp" required><label for="seekEmp" class="label-radio">Seeking Employment</label><br>
+        <input type="radio" name="empStatus" id="empOther" required><label for="empOther" class="label-radio">Other</label>
+        
+      </div> 
+      <div class="inputarea">
+        <label for="password">Password</label>
+        <input type="password" name="pinpass" placeholder="Set strong Password" id="password">
+      </div>
+      <div class="register-button">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer  style="position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;">
+    <div class="socialicons">
+      <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt' style="color: rgb(187, 42, 187); font-size: 1.4vw;"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'  style='color:rgb(0, 162, 255); font-size: 1.4vw;' ></i></a>
+      <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle' style='color:#005cff; font-size: 1.4vw;'  ></i></a>
+      <a href="https://www.youtube.com" target="_blank"><i class='bx bxl-youtube' style='color:#ff0000; font-size: 1.4vw;'  ></i></a>
+    </div>
+    <p class="footer-brand">
+      &copy; PureLIFE 2023 - Ujwal Mamidi, Justin John
+    </p>
+  </footer>
+  <script src="../scripts/menuopen.js"></script>
+  <script src="../scripts//src/components/formSuccess.html"></script>
+  <script src="../scripts/yearDropdown.js"></script>
+</body>
+</html>

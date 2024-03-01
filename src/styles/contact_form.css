@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;800&display=swap');
+body {
+  background-color: rgb(72, 72, 72);
+}
+
+@media(max-width:768px)  {
+  .contactform {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    top: -244px;
+      /* display: flex; */
+    position: relative;
+  }
+  body {
+    background-color: rgb(72, 72, 72);
+  }
+  
+}
+
+.contactform {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#form, .info-container {
+  width:40%;
+  margin: auto;
+  padding: 2vw;
+  background-color: #d3d0cb;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#form h1 {
+  color: orange;
+  text-align: center;
+  font-size: 2.3vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+#form button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 50%;
+  color: white;
+  background-color: #393d3f;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#form button:hover {
+  background-color: #6c6c6c;
+}
+
+.inputarea{
+  display: flex;
+  flex-direction: column;
+}
+.otherinputs{
+  margin-top: 1vw;
+}
+
+.inputarea label,.otherinputs label{
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.inputarea input,.inputarea textarea,.otherinputs select {
+  border: 2px solid #f0f0f0;
+  color: #393d3f;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 10px;
+  width: 92%;
+  font-family: 'Poppins', sans-serif;
+  transition: 100ms ease-in-out;
+}
+.otherinputs #birthYear{
+  width: 38.5vw;
+}
+.otherinputs #birthYear option{
+  color: #393d3f;
+  font-weight: 500;
+}
+.inputarea input:hover,.inputarea textarea:hover,.otherinputs #birthYear:hover {
+  border: 1px solid black;
+  
+}
+
+.label-radio {
+  margin-left: 5px;
+  color: #393d3f !important;
+}
+.label-radio:hover {
+  color: black !important;
+}
+
+.inputarea input:focus {
+  outline: 0;
+}
+
+.inputarea.valid input {
+  border-color: green;
+}
+
+.inputarea2.valid input {
+  border-color: green;
+}
+
+.inputarea.error input {
+  border-color: #c90000;
+}
+
+.inputarea2.error input {
+  border-color: #c90000;
+}
+
+.inputarea .error {
+  margin-top: 5px;
+  color: #c90000;
+  font-size: 13px;
+  height: 13px;
+}
+
+.inputarea2 .error {
+  margin-top: 5px;
+  color: #c90000;
+  font-size: 13px;
+  height: 13px;
+}
+
+
+input[type="radio"] {
+  accent-color: orange;
+}
+
+.register-button {
+  display: flex;
+  justify-content: center;
+}
+.register-button button{
+  background-color: orange !important;
+  color: black !important;
+  font-weight: 600;
+  font-size: 1.2vw;
+}
+
+
+
+.info-container h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.info {
+  margin-top: 10px;
+}
+
+.info h3 {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5px;
+  color: black;
+}
+
+.info span {
+  font-family: "Montserrat-Light";
+  color: #393d3f;
+}
